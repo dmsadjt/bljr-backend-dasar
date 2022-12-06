@@ -8,7 +8,7 @@ readableStream.on('readable', () => {
     try {
         process.stdout.write(`[${readableStream.read()}]`)
     } catch (error) {
-
+        console.log(error);
     }
 })
 
