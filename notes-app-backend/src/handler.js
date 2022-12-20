@@ -24,6 +24,7 @@ const addNoteHandler = (request, h) => {
                 noteId: id,
             },
         });
+        response.type('application/json;charset=utf-8');
         response.code(201);
         return response;
     }
@@ -32,8 +33,8 @@ const addNoteHandler = (request, h) => {
         status: 'fail',
         message: 'Catatan gagal ditambahkan',
     });
-
     response.code(500);
+    response.type('application/json;charset=utf-8');
     return response;
 
 };
