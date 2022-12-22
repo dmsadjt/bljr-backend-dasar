@@ -1,0 +1,27 @@
+{
+  "name": "final-project-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "lint": "eslint ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.1.0",
+    "nanoid": "^4.0.0",
+    "underscore": "^1.13.6"
+  }
+}
